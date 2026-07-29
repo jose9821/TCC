@@ -1,3 +1,33 @@
+<?php require_once("../conexao/conexao.php"); ?>
+<?php
+session_start();
+if (isset($_POST["usuario"])) {
+
+    $_usuario = $_POST["usuario"];
+    $_senha = $_POST["senha"];
+    $login = "SELECT login.id_usuario, login.id_tipo, dados_usuario.nome 
+              FROM login 
+              INNER JOIN dados_usuario ON login.id_usuario = dados_usuario.id_usuario 
+              WHERE login.usuario = '{$_usuario}' AND login.senha = '{$_senha}'";
+
+    $acesso = mysqli_query($conecta, $login);
+    if (!$acesso) {
+        die("Falhou ao fazer seu Login, tente novamente.");
+    }
+
+    $informacao = mysqli_fetch_assoc($acesso);
+    if (empty($informacao)) {
+        $mensagem = "Login sem Sucesso";
+    } else {
+        $_SESSION["usuario_Logado"] = $informacao["id_usuario"];
+        $_SESSION["nome_usuario"] = $informacao["nome"];
+        $_SESSION['id_tipo'] = $informacao['id_tipo'];
+        header("location:index.php");
+    }
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -5,7 +35,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Tela de Login</title>
     
     <!-- CSS PARA TER UMA BASE E PRA FICAR BONITO POR ENQUANTO-->
     <style>
@@ -268,20 +298,20 @@
 </head>
 
 <body>
-    <a href="index.php"> <?php echo htmlspecialchars ("Deseja voltar? Clique aqui?")?> </a> <!--MUDAR A URL DO LINK!!!-->
+    <a href="index.php"> <?php echo htmlspecialchars ("Deseja voltar? Clique aqui?")?> </a>
     <main>
         <form action="tela_login.php" method="post">
             <h2>Use seu Login</h2>
             <input type="text" name="usuario" placeholder="Usuário">
             <input type="password" name="senha" placeholder="Senha">
             <input type="submit" value="Login">
-            <?php /*   //VARIÁVEIS CASO DÊ ERRO QUE VAI APARECER QUANDO O BD ESTIVER PRONTO!!!
+            <?php
             if (isset($mensagem)) {
                 ?>
                 <p> <?php echo $mensagem ?> </p>
                 <?php
             }
-            */?> 
+            ?> 
         </form>
     </main>
 </body>
