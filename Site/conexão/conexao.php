@@ -1,6 +1,6 @@
 <?php
  $host = 'localhost';
- $db   = ''; //MUDAR PARA O NOME DO BANCO!!!
+ $db   = 'prototipo';
  $user = 'root'; 
  $pass = '';     
 
@@ -12,4 +12,3 @@ try {
 
     die(json_encode(["status" => "error", "message" => "Erro de conexão com o banco."]));
 }
-?>
