@@ -1,7 +1,7 @@
  <!-- Rodape -->
 <footer>
         <div id="logoRodape" onclick="window.location=''">
-            <img src="../Imagens/Logo1.png" alt="Logo RG Eats">
+            <img src="../Imagens/Logo1(Sem%20Fundo).png" alt="Logo RG Eats">
             <h3>RG Eats</h3>
         </div>
         <div class="Texto">
