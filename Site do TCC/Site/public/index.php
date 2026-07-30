@@ -5,6 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RG Eats</title>
+    <link rel="stylesheet" href="CSS%20(Ryan)/style.css">
 </head>
 <body>
     <section class="hero">
