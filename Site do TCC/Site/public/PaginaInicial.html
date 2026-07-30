@@ -1,0 +1,289 @@
+<!--HTML DO RAPHAEL PARA EU INTEGRAR NO PHP, TAMBÉM TEM CSS PROVISÓRIO-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RG Eats</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #ffffff;
+    color: #1a1a1a;
+  }
+ 
+  /* ===== NAVBAR ===== */
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #6de866;
+    padding: 10px 24px;
+  }
+  .navbar .logo svg { display: block; height: 26px; width: 26px; }
+  .navbar .nav-links {
+    display: flex;
+    gap: 22px;
+    list-style: none;
+  }
+  .navbar .nav-links li a {
+    text-decoration: none;
+    color: #1a1a1a;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .navbar .nav-actions {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  .btn-entrar {
+    background: #e9e9e9;
+    color: #1a1a1a;
+    border: none;
+    padding: 6px 16px;
+    border-radius: 6px;
+    font-size: 13px;
+    cursor: pointer;
+  }
+  .btn-registrar {
+    background: #2b2b2b;
+    color: #fff;
+    border: none;
+    padding: 6px 16px;
+    border-radius: 6px;
+    font-size: 13px;
+    cursor: pointer;
+  }
+ 
+  /* ===== HERO ===== */
+  .hero {
+    position: relative;
+    background: #0096ff;
+    padding: 60px 20px 70px;
+    text-align: center;
+  }
+  .hero-title-box {
+    display: inline-block;
+    border: 2px solid #8f4bff;
+    padding: 10px 40px;
+    margin-bottom: 14px;
+  }
+  .hero-title-box h1 {
+    font-size: 32px;
+    font-weight: 800;
+    color: #111;
+    letter-spacing: 0.5px;
+  }
+  .hero p.subtitle {
+    color: #f3ecff;
+    font-size: 15px;
+    font-weight: 500;
+  }
+  .hero-icon-btn {
+    position: absolute;
+    top: 20px;
+    right: 24px;
+    width: 40px;
+    height: 40px;
+    background: #0a6fd1;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+  }
+  .hero-icon-btn svg { width: 20px; height: 20px; fill: #fff; }
+ 
+  /* ===== PHOTO ===== */
+  .hero-photo {
+    width: 100%;
+    display: block;
+    max-height: 480px;
+    object-fit: cover;
+  }
+ 
+  /* ===== EQUIPE ===== */
+  .team-section {
+    padding: 28px 24px 40px;
+  }
+  .team-section h2 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 2px;
+  }
+  .team-section .team-subtitle {
+    color: #8a8a8a;
+    font-size: 13px;
+    margin-bottom: 20px;
+  }
+  .team-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+  }
+  .team-card {
+    border: 1px solid #e2e2e2;
+    border-radius: 8px;
+    padding: 14px 16px;
+    width: 220px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  }
+  .team-card h3 {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  .team-card .member-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .avatar {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: #3a3a3a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+  .avatar svg { width: 16px; height: 16px; fill: #cfcfcf; }
+  .member-info .username {
+    font-size: 13px;
+    font-weight: 600;
+    color: #1a1a1a;
+  }
+  .member-info .role {
+    font-size: 11px;
+    color: #8a8a8a;
+    line-height: 1.3;
+  }
+ 
+  /* ===== FOOTER BAR ===== */
+  .footer-bar {
+    background: #00c0e8;
+    color: #fff;
+    text-align: center;
+    padding: 22px 16px;
+    font-size: 15px;
+    font-weight: 700;
+  }
+ 
+  @media (max-width: 600px) {
+    .navbar .nav-links { display: none; }
+    .hero-title-box h1 { font-size: 24px; }
+  }
+</style>
+</head>
+<body>
+ 
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="logo">
+      <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <path d="M20 80 L40 20 L55 55 L70 20 L85 80 L65 80 L55 60 L45 80 Z" fill="#1a1a1a"/>
+      </svg>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#">Início</a></li>
+      <li><a href="#">Sobre nós</a></li>
+      <li><a href="#">Parceiros</a></li>
+      <li><a href="#">Mapa</a></li>
+      <li><a href="#">Contato</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="btn-entrar">Entrar</button>
+      <button class="btn-registrar">Registrar-se</button>
+    </div>
+  </header>
+ 
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-icon-btn">
+      <svg viewBox="0 0 24 24"><path d="M9 11.24V7.5C9 6.12 10.12 5 11.5 5S14 6.12 14 7.5v3.74c1.21-.81 2-2.18 2-3.74C16 5.01 13.99 3 11.5 3S7 5.01 7 7.5c0 1.56.79 2.93 2 3.74zM19 13.5c0-.83-.67-1.5-1.5-1.5H15V7.5C15 6.12 13.88 5 12.5 5S10 6.12 10 7.5v9.62l-3.16-.66a1.5 1.5 0 0 0-1.34 2.54l5.31 5.31c.28.28.65.44 1.06.44h6.63c.78 0 1.44-.56 1.58-1.32l1.03-5.6c.06-.32.09-.64.09-.97V13.5z"/></svg>
+    </div>
+    <div class="hero-title-box">
+      <h1>RG Eats</h1>
+    </div>
+    <p class="subtitle">Redistribuição de Alimentos em Rio Grande da Serra</p>
+  </section>
+ 
+  <!-- PHOTO -->
+  <img class="hero-photo" src="waterfall.jpg" alt="Cachoeira em Rio Grande da Serra">
+ 
+  <!-- EQUIPE -->
+  <section class="team-section">
+    <h2>Equipe</h2>
+    <p class="team-subtitle">Membros</p>
+ 
+    <div class="team-grid">
+      <div class="team-card">
+        <h3>Thiago Siqueira Russo</h3>
+        <div class="member-row">
+          <div class="avatar"><svg viewBox="0 0 24 24"><path d="M12 12c2.7 0 5-2.3 5-5s-2.3-5-5-5-5 2.3-5 5 2.3 5 5 5zm0 2c-3.3 0-10 1.7-10 5v3h20v-3c0-3.3-6.7-5-10-5z"/></svg></div>
+          <div class="member-info">
+            <div class="username">Te Rango</div>
+            <div class="role">Prototipagem, a frase e o design todo</div>
+          </div>
+        </div>
+      </div>
+ 
+      <div class="team-card">
+        <h3>José Vitor dos Santos Pereira</h3>
+        <div class="member-row">
+          <div class="avatar"><svg viewBox="0 0 24 24"><path d="M12 12c2.7 0 5-2.3 5-5s-2.3-5-5-5-5 2.3-5 5 2.3 5 5 5zm0 2c-3.3 0-10 1.7-10 5v3h20v-3c0-3.3-6.7-5-10-5z"/></svg></div>
+          <div class="member-info">
+            <div class="username">Gspxli</div>
+            <div class="role">Desenvolvedor</div>
+          </div>
+        </div>
+      </div>
+ 
+      <div class="team-card">
+        <h3>Raphael Pierre Lima da Silva</h3>
+        <div class="member-row">
+          <div class="avatar"><svg viewBox="0 0 24 24"><path d="M12 12c2.7 0 5-2.3 5-5s-2.3-5-5-5-5 2.3-5 5 2.3 5 5 5zm0 2c-3.3 0-10 1.7-10 5v3h20v-3c0-3.3-6.7-5-10-5z"/></svg></div>
+          <div class="member-info">
+            <div class="username">Jesus</div>
+            <div class="role">Prototipagem e vídeo do curso</div>
+          </div>
+        </div>
+      </div>
+ 
+      <div class="team-card">
+        <h3>Ryan Rodrigues Goncalves</h3>
+        <div class="member-row">
+          <div class="avatar"><svg viewBox="0 0 24 24"><path d="M12 12c2.7 0 5-2.3 5-5s-2.3-5-5-5-5 2.3-5 5 2.3 5 5 5zm0 2c-3.3 0-10 1.7-10 5v3h20v-3c0-3.3-6.7-5-10-5z"/></svg></div>
+          <div class="member-info">
+            <div class="username">Ryancllo</div>
+            <div class="role">Ajuda de código e testes</div>
+          </div>
+        </div>
+      </div>
+ 
+      <div class="team-card">
+        <h3>Gustavo Alves dos Santos</h3>
+        <div class="member-row">
+          <div class="avatar"><svg viewBox="0 0 24 24"><path d="M12 12c2.7 0 5-2.3 5-5s-2.3-5-5-5-5 2.3-5 5 2.3 5 5 5zm0 2c-3.3 0-10 1.7-10 5v3h20v-3c0-3.3-6.7-5-10-5z"/></svg></div>
+          <div class="member-info">
+            <div class="username">Gustavinho</div>
+            <div class="role">Segunda de bolsas e testes</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- FOOTER -->
+  <footer class="footer-bar">
+    Protótipo de um site de Trabalho de Conclusão de Curso
+  </footer>
+ 
+</body>
+</html>
+ 
