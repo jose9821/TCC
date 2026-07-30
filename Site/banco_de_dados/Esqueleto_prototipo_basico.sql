@@ -1,10 +1,14 @@
-DROP DATABASE IF EXISTS prototipo;
-CREATE DATABASE prototipo;
-USE prototipo;
-CREATE TABLE prototipo.escolas (
+DROP DATABASE IF EXISTS rgeats_bd;
+CREATE DATABASE rgeats_bd;
+USE rgeats_bd;
+CREATE TABLE rgeats_bd.escolas (
     id INT AUTO_INCREMENT PRIMARY KEY,
     nome VARCHAR(150) NOT NULL,
-    cidade VARCHAR(100) -- modelo padrão das escolas para copiar e colar pelo ID
+    observacoes VARCHAR(2000)DEFAULT NULL,
+    categoria ENUM('Rio grande da serra','Ribeirão Pires','Mauá','Santo Andre') NOT NULL,
+    status_escola ENUM('Ativo','inativo','pendente') DEFAULT 'inativo' NOT NULL,  -- NOVA LINHA RESPONSAVEL POR MOSTRAR O STATUS DA ESCOLA
+    criado_em TIMESTAMP DEFAULT CURRENT_TIMESTAMP, -- mostra o momento em que a escola foi inserida
+    atualizado_em TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP -- atualização do cadastro da escola
 );
 CREATE TABLE prototipo.alimentos (
     id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
@@ -18,12 +22,11 @@ CREATE TABLE prototipo.alimentos (
     FOREIGN KEY (escola_id) REFERENCES escolas(id) ON DELETE CASCADE -- mudanças colocando a categoria ENUM, Unidade, check, e data do alimento
 ); 
 
-Create table prototipo.usuarios (
+CREATE TABLE prototipo.usuarios (
 ID Int UNSIGNED NOT NULL AUTO_INCREMENT,
 login VARCHAR (30) UNIQUE NOT NULL,
 senha Varchar(255), -- aumentei a quantidade de caracteres de 50===255
 Primary Key (ID)) ENGINE = InnoDB; -- https://www.devmedia.com.br/criando-um-sistema-de-cadastro-e-login-com-php-e-mysql/37213 link do script que peguei
-
 
 CREATE TABLE prototipo.alunos (
     id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
