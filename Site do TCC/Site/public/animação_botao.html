@@ -1,0 +1,97 @@
+<button>Enviar</button>
+<button>Cancelar</button>
+
+<script>
+  const botoes = document.querySelectorAll("button");
+
+  botoes.forEach((botao) => {
+  
+    botao.style.transition = "transform 0.2s ease, box-shadow 0.2s ease";
+
+    botao.addEventListener("mouseenter", () => {
+      botao.style.transform = "scale(1.05)";
+      botao.style.boxShadow = "0 4px 12px rgba(0, 0, 0, 0.15)";
+    });
+
+    botao.addEventListener("mouseleave", () => {
+      botao.style.transform = "scale(1)";
+      botao.style.boxShadow = "none";
+    });
+
+    botao.addEventListener("mousedown", () => {
+      botao.style.transform = "scale(0.97)";
+    });
+
+    botao.addEventListener("mouseup", () => {
+      botao.style.transform = "scale(3.9)";
+    });
+  });
+</script>
+
+<button class="btn-enviar">Enviar</button>
+<button class="btn-cancelar">Cancelar</button>
+
+<script>
+  const botoes = document.querySelectorAll("button");
+
+  
+  const cores = {
+    "btn-enviar": {
+      bg: "#4ade80",        
+      hoverBg: "#22c55e",   
+      texto: "#064e3b",     
+      sombra: "rgba(34, 197, 94, 0.35)"
+    },
+    "btn-cancelar": {
+      bg: "#38bdf8",     
+      hoverBg: "#0284c7",   
+      texto: "#0c4a6e",     
+      sombra: "rgba(2, 132, 199, 0.35)"
+    }
+  };
+
+  botoes.forEach((botao) => {
+   
+    const estiloCor = botao.classList.contains("btn-enviar") ? cores["btn-enviar"] : cores["btn-cancelar"];
+
+    
+    botao.style.backgroundColor = estiloCor.bg;
+    botao.style.color = estiloCor.texto;
+    botao.style.border = "none";
+    botao.style.padding = "10px 20px";
+    botao.style.borderRadius = "8px";
+    botao.style.fontWeight = "600";
+    botao.style.cursor = "pointer";
+    botao.style.transition = "all 0.25s cubic-bezier(0.2, 0.8, 0.2, 1)";
+
+    
+    botao.addEventListener("mouseenter", () => {
+      botao.style.backgroundColor = estiloCor.hoverBg;
+      botao.style.color = "#ffffff"; 
+      botao.style.transform = "translateY(-2px) scale(1.04)";
+      botao.style.boxShadow = `0 6px 18px ${estiloCor.sombra}`;
+      botao.style.fontSize = "1.08em";
+    });
+
+   
+    botao.addEventListener("mouseleave", () => {
+      botao.style.backgroundColor = estiloCor.bg;
+      botao.style.color = estiloCor.texto;
+      botao.style.transform = "translateY(0) scale(1)";
+      botao.style.boxShadow = "none";
+      botao.style.fontSize = "1em";
+    });
+
+    
+    botao.addEventListener("mousedown", () => {
+      botao.style.transform = "translateY(0) scale(0.96)";
+      botao.style.boxShadow = `0 2px 6px ${estiloCor.sombra}`;
+    });
+
+   
+    botao.addEventListener("mouseup", () => {
+      botao.style.transform = "translateY(-2px) scale(1.04)";
+      botao.style.boxShadow = `0 6px 18px ${estiloCor.sombra}`;
+    });
+  });
+</script>
