@@ -64,5 +64,6 @@ require_once("Navbar.php");
     </div>
 
     <script src="JS%20(Gustavo)/animacao_bolha.js"></script>
+    <script src="JS%20(Gustavo)/acessibilidade.js" defer></script>
 </body>
 </html>
