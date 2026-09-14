@@ -63,6 +63,7 @@ if (isset($_SERVER['REQUEST_METHOD']) && $_SERVER['REQUEST_METHOD'] === 'POST') 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>RG Eats - Registre-se</title>
 <link rel="stylesheet" href="CSS%20(Ryan)/style.css">
+<link rel="stylesheet" href="CSS%20(Ryan)/acessibilidade.css">
 </head>
 <body class="login-page">
 
