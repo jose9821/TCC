@@ -52,6 +52,8 @@ if (isset($_POST["usuario"])) {
   new window.VLibras.Widget('https://vlibras.gov.br/app');
 </script>
 
+    <?php require_once("acessibilidade.php"); ?>
+
 <div class="bubbles" id="bubblesContainer"></div>
 
     <div class="login-wrapper">
