@@ -9,6 +9,7 @@
 <link rel="stylesheet" href="CSS%20(Ryan)/style.css">
 <link rel="stylesheet" href="CSS%20(Ryan)/acessibilidade.css">
 <script src="JS%20(Gustavo)/animacao_bolha.js"></script>
+<script src="JS%20(Gustavo)/acessibilidade.js" defer></script>
 </head>
 <body>
 
