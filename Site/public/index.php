@@ -10,6 +10,7 @@ require_once ("../conexao/conexao.php"); ?>
 	<link rel="stylesheet" href="CSS%20(Ryan)/acessibilidade.css">
     <script src="JS%20(Gustavo)/animacao_bolha.js"></script>
     <script src="JS%20(Gustavo)/carrossel.js" defer></script>
+	<script src="JS%20(Gustavo)/acessibilidade.js" defer></script>
 </head>
 <body>
     <section class="hero">
