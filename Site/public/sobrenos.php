@@ -7,6 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Sobre Nós - RG Eats</title>
 <link rel="stylesheet" href="CSS%20(Ryan)/style.css">
+<link rel="stylesheet" href="CSS%20(Ryan)/acessibilidade.css">
 <script src="JS%20(Gustavo)/animacao_bolha.js"></script>
 </head>
 <body>
