@@ -113,6 +113,8 @@ if (isset($_SERVER['REQUEST_METHOD']) && $_SERVER['REQUEST_METHOD'] === 'POST') 
         <button type="submit" class="btn-submit">Registrar</button>
  
       </form>
+
+        <?php require_once("acessibilidade.php"); ?>
  
     </div>
   </div>
