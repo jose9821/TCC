@@ -45,6 +45,8 @@ require_once("Navbar.php");
                 <p><strong>Membro desde:</strong> <?= date('d/m/Y', strtotime($usuario['criado_em'])); ?></p>
             </div>
 
+            <?php require_once("acessibilidade.php"); ?>
+
             <a href="../conexao/logout.php" class="btn-submit" style="text-align: center; text-decoration: none; display: block; background: #e53e3e; color: #fff; margin-top: 20px;">Sair da Conta</a>
         </div>
     </div>
