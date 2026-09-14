@@ -56,6 +56,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   new window.VLibras.Widget('https://vlibras.gov.br/app');
 </script>
 
+      <?php require_once("acessibilidade.php"); ?>
+
 
     <div class="contact-card">
       <form action="" method="POST">
