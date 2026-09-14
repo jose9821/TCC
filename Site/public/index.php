@@ -29,6 +29,8 @@ require_once ("../conexao/conexao.php"); ?>
   new window.VLibras.Widget('https://vlibras.gov.br/app');
 </script>
 
+	<?php require_once("acessibilidade.php"); ?>
+
     
     <div class="photo-wrapper">
     <div class="carrossel" id="carrossel">
