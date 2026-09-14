@@ -5,7 +5,7 @@ const escolasParceiras = [
     descricao: "Unidade central: gestão administrativa e articulação com a prefeitura.",
     lat: -23.751622,
     lng: -46.391074
-  },
+  }, /*
   {
     nome: "Escola Antonio Lucas",
     descricao: "Apoio tecnológico: soluções para controle de estoque dos alimentos doados.",
@@ -29,7 +29,7 @@ const escolasParceiras = [
     descricao: "Centro da cidade",
     lat: -23.7450938,
     lng: -46.3954697
-    }
+    } */
 ];
  
 // Centraliza o mapa no meio das 4 escolas
