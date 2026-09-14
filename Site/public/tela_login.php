@@ -36,6 +36,7 @@ if (isset($_POST["usuario"])) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS%20(Ryan)/style.css">
+    <link rel="stylesheet" href="CSS%20(Ryan)/acessibilidade.css">
     <title>Tela de Login - RG Eats</title>
 </head>
 
