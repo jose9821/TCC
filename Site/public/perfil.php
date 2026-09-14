@@ -45,6 +45,17 @@ require_once("Navbar.php");
                 <p><strong>Membro desde:</strong> <?= date('d/m/Y', strtotime($usuario['criado_em'])); ?></p>
             </div>
 
+              <div vw class="enabled">
+  <div vw-access-button class="active"></div>
+  <div vw-plugin-wrapper>
+    <div class="vw-plugin-top-wrapper"></div>
+  </div>
+</div>
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script>
+  new window.VLibras.Widget('https://vlibras.gov.br/app');
+</script>
+
             <?php require_once("acessibilidade.php"); ?>
 
             <a href="../conexao/logout.php" class="btn-submit" style="text-align: center; text-decoration: none; display: block; background: #e53e3e; color: #fff; margin-top: 20px;">Sair da Conta</a>
