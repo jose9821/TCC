@@ -1,19 +1,3 @@
-<?php
-/**
- * Área da Acessibilidade - RG Eats
- * -----------------------------------------------------------------
- * Inclua este arquivo no lugar do widget do VLibras, em todas as páginas:
- *
- *   <?php require_once("acessibilidade.php"); ?>
- *
- * E garanta que, no <head> de cada página, existam:
- *   <link rel="stylesheet" href="CSS%20(Ryan)/acessibilidade.css">
- * E antes do fechamento do </body>:
- *   <script src="JS%20(Gustavo)/acessibilidade.js" defer></script>
- *
- * (ajuste os caminhos conforme a pasta onde você salvar os arquivos)
- */
-?>
 <!-- ===================== BOTÃO DE ACESSIBILIDADE ===================== -->
 <div class="acessibilidade-widget">
 
