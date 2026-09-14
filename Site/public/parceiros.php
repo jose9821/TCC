@@ -52,6 +52,7 @@
         <li>
           <strong>• ETEC de Rio Grande da Serra (Sede):</strong> Sendo a unidade central, ela atua como o centro de inteligência e coordenação do projeto. O suporte foca na gestão administrativa e na articulação com a prefeitura e órgãos locais, garantindo que a logística de arrecadação esteja em conformidade com as normas municipais.
         </li>
+        <!--
         <li>
           <strong>• Escola Antonio Lucas:</strong> Com um perfil voltado à tecnologia e automação, esta unidade auxilia no desenvolvimento de soluções inteligentes para o controle de estoque dos alimentos doados. Elas ajudam a garantir que nada perca a validade, otimizando a distribuição para as famílias que mais precisam.
         </li>
@@ -61,7 +62,7 @@
         <li>
           <strong>• E.E Edmundo Luiz de Nobrega Teixeira:</strong> Focada na operação e infraestrutura, a Edmundo Luiz serve como um ponto estratégico de triagem e armazenamento temporário. Sua equipe técnica orienta sobre as melhores práticas de manuseio e segurança alimentar, garantindo que as doações cheguem à mesa com a máxima qualidade.
         </li>
-      </ul>
+      </ul> -->
     </section>
 
     <!-- MAPA -->
