@@ -95,5 +95,6 @@ if (isset($_POST["usuario"])) {
     </div>
 
     <script src="JS%20(Gustavo)/animacao_bolha.js"></script>
+    <script src="JS%20(Gustavo)/acessibilidade.js" defer></script>
 </body>
 </html>
