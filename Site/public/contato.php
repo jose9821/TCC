@@ -92,6 +92,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   <?php require_once("rodape.php") ?>
 
   <script src="JS%20(Gustavo)/animacao_bolha.js"></script>
-  <script src="JS%20(Gustavo)/acessibilidade.js"></script>
+  <script src="JS%20(Gustavo)/acessibilidade.js" defer></script>
 </body>
 </html>
