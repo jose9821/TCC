@@ -24,6 +24,7 @@ require_once("Navbar.php");
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Perfil - RG Eats</title>
     <link rel="stylesheet" href="CSS%20(Ryan)/style.css">
+    <link rel="stylesheet" href="CSS%20(Ryan)/acessibilidade.css">
 </head>
 <body class="login-page">
     <div class="bubbles" id="bubblesContainer"></div>
