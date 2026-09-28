@@ -78,15 +78,16 @@ O ecossistema do RGEats adota uma arquitetura focada em leveza, responsividade e
 * **Back-end:** PHP (Processamento de regras de negócio, rotas e autenticação).
 * **Banco de Dados:** MySQL (Modelagem relacional para garantia de integridade dos dados de usuários, doações e cadastros).
 * **Versionamento & Governança:** Git e GitHub.
+* * **Outras Ferramentas:** Figma, Firezilla, XAMPP, VScode, Brackets, Gemini, Claude, CHATgpt, Draw.io
 
 ---
 
 ## 6. Cronograma de Desenvolvimento
 
-- [x] **Fase 1: Concepção e Ideação** — Brainstorming, delimitação do problema e levantamento de requisitos.
-- [x] **Fase 2: Pesquisa de Campo & Mapeamento** — Coleta de dados quantitativos e contato com atores locais.
-- [ ] **Fase 3: Prototipagem e Modelagem** — Criação de wireframes, Diagrama Entidade-Relacionamento (DER) e fluxos de tela.
-- [ ] **Fase 4: Desenvolvimento e Integração** — Codificação do Front-end, Back-end PHP e banco de Dados MySQL.
+- [x] **Fase 1: Concepção e Ideação** — Brainstorming, delimitação do problema e levantamento de requisitos, alem da utilização do Figma para a estrutução do site, Draw.io para a criação de Fluxogramas e lógica.
+- [x] **Fase 2: Pesquisa de Campo & Mapeamento** — Coleta de dados quantitativos e contato com atores locais com o uso de google forms.
+- [ ] **Fase 3: Prototipagem e Modelagem** — Criação de wireframes(Figma), Diagrama Entidade-Relacionamento (Draw.io) (DER) e fluxos de tela.
+- [ ] **Fase 4: Desenvolvimento e Integração** — Codificação do Front-end, Back-end PHP e banco de Dados MySQL com auxilio de IA.
 - [ ] **Fase 5: Testes, Refinamento e Defesa** — Homologação das funcionalidades, ajustes de Pré-TCC e apresentação final.
 
 ---
@@ -100,6 +101,7 @@ O ecossistema do RGEats adota uma arquitetura focada em leveza, responsividade e
 * **Ryan Rodrigues Gonçalves**
 * **Thiago Siqueira Russo**
 
-**Orientação Acadêmica:** Corpo Docente do Curso Técnico em Informática para a Internet  
+**Orientação Acadêmica:** Corpo Docente do Curso Técnico em Informática para a Internet
+**Orientador:** José Victor Moreira da Silva dos Santos
 **Instituição:** ETEC de Rio Grande da Serra / Centro Paula Souza  
 **Ano de Conclusão:** 2026
