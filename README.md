@@ -51,3 +51,55 @@ O município de Rio Grande da Serra apresenta discrepâncias socioeconômicas ma
 ## 3. Proposta de Valor e Solução
 
 O **RGEats** propõe o desenvolvimento de um **ecossistema web simplificado e intuitivo** que atua como ponte entre os agentes geradores de excedentes e as entidades responsáveis pelo suporte social no município.
+
+### 🎯 Principais Objetivos:
+* **Mapeamento Ativo:** Registrar estabelecimentos parceiros e sinalizar lotes de alimentos disponíveis para resgate.
+* **Agilização do Fluxo de Notificação:** Alertar entidades cadastradas assim que um lote for disponibilizado.
+* **Rastreabilidade Básica:** Monitorar o volume de alimentos reaproveitados e o impacto gerado na comunidade.
+
+---
+
+## 4. Metodologia de Pesquisa e Validação
+
+Para embasar a construção da plataforma com dados empíricos e alinhados à realidade local, a equipe estruturou um plano de pesquisa em três frentes:
+
+1. **Sessões de Ideação e Brainstorming:** Utilização de dinâmicas de *Design Thinking* para delimitação do escopo e definição das personas do sistema.
+2. **Coleta Quantitativa de Dados:** Aplicação de questionário estruturado (via *Google Forms*) para mapear o perfil de consumo e a percepção da comunidade sobre o desperdício alimentar.
+3. **Mapeamento de Campo e Articulação Institucional:** Levantamento dos principais pontos de circulação de alimentos na cidade (mercados, feirantes, escolas e associações de bairro) para identificar potenciais parceiros e validadores do modelo.
+
+---
+
+## 5. Arquitetura e Engenharia de Software
+
+O ecossistema do RGEats adota uma arquitetura focada em leveza, responsividade e facilidade de manutenção em ambientes de hospedagem web padrão.
+
+### 🛠️ Stack Tecnológica
+* **Front-end:** HTML5, CSS3, JavaScript (Interfaces responsivas focadas em usabilidade e acessibilidade).
+* **Back-end:** PHP (Processamento de regras de negócio, rotas e autenticação).
+* **Banco de Dados:** MySQL (Modelagem relacional para garantia de integridade dos dados de usuários, doações e cadastros).
+* **Versionamento & Governança:** Git e GitHub.
+
+---
+
+## 6. Cronograma de Desenvolvimento
+
+- [x] **Fase 1: Concepção e Ideação** — Brainstorming, delimitação do problema e levantamento de requisitos.
+- [x] **Fase 2: Pesquisa de Campo & Mapeamento** — Coleta de dados quantitativos e contato com atores locais.
+- [ ] **Fase 3: Prototipagem e Modelagem** — Criação de wireframes, Diagrama Entidade-Relacionamento (DER) e fluxos de tela.
+- [ ] **Fase 4: Desenvolvimento e Integração** — Codificação do Front-end, Back-end PHP e banco de Dados MySQL.
+- [ ] **Fase 5: Testes, Refinamento e Defesa** — Homologação das funcionalidades, ajustes de Pré-TCC e apresentação final.
+
+---
+
+## 7. Corpo Discente e Créditos
+
+### 👨‍💻 Equipe de Desenvolvedores
+* **Gustavo Alves dos Santos**
+* **José Vitor dos Santos Pereira**
+* **Raphael Pierre Lima da Silva**
+* **Ryan Rodrigues Gonçalves**
+* **Thiago Siqueira Russo**
+
+**Orientação Acadêmica:** Corpo Docente do Curso Técnico em Informática para a Internet  
+**Instituição:** ETEC de Rio Grande da Serra / Centro Paula Souza  
+**Ano de Conclusão:** 2026
