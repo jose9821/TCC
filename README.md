@@ -32,7 +32,7 @@
 
 ---
 
-## 🌱 Sobre o projeto
+## Sobre o projeto
 
 O **RGEats** é o Trabalho de Conclusão de Curso (TCC) do curso técnico em **Informática para a Internet** da **ETEC de Rio Grande da Serra**.
 
@@ -44,7 +44,7 @@ A resposta virou uma **plataforma web capaz de acompanhar o desperdício de alim
 
 ---
 
-## 🔥 O Problema
+## O Problema
 
 Rio Grande da Serra tem uma **grande lacuna socioeconômica na questão alimentar**. Diversas regiões do município vivem em situação de marginalização e, ao mesmo tempo, a **falta de verbas** limita as soluções disponíveis.
 
@@ -52,13 +52,13 @@ Rio Grande da Serra tem uma **grande lacuna socioeconômica na questão alimenta
 <tr>
 <td width="50%" valign="top">
 
-### 🗑️ De um lado
+### De um lado
 Mercados, escolas e outras instituições movimentam alimentos todos os dias, e parte deles acaba descartada.
 
 </td>
 <td width="50%" valign="top">
 
-### 🍽️ Do outro
+### Do outro
 Comunidades vulneráveis sem acesso regular a alimentação, em um município com poucos recursos para mudar esse cenário.
 
 </td>
@@ -69,27 +69,27 @@ Comunidades vulneráveis sem acesso regular a alimentação, em um município co
 
 ---
 
-## 💡 A Solução
+## A Solução
 
 Uma aplicação web capaz de **reduzir o desperdício alimentar** e **redirecionar esses alimentos para consumo seguro** nas comunidades mais vulneráveis do município.
 
 ```mermaid
 flowchart LR
-    A["🏪 Instituições parceiras<br/>mercados · escolas · outros"] --> B(["🌐 Plataforma RGEats"])
+    A[" Instituições parceiras<br/>mercados · escolas · outros"] --> B([" Plataforma RGEats"])
     B --> C{"Alimento<br/>próprio para consumo?"}
-    C -- Sim --> D["🤝 Redistribuição<br/>para comunidades vulneráveis"]
-    C -- Não --> E["♻️ Descarte adequado"]
+    C -- Sim --> D[" Redistribuição<br/>para comunidades vulneráveis"]
+    C -- Não --> E[" Descarte adequado"]
 
     style B fill:#1B5E20,stroke:#2ECC71,color:#fff
     style D fill:#2ECC71,stroke:#1B5E20,color:#0D1117
     style E fill:#455A64,stroke:#90A4AE,color:#fff
 ```
 
-> 📐 Diagrama simplificado. Os fluxos completos (chegada dos alimentos, destinos, descarte e redistribuição) foram modelados no **Draw.io** durante a fase de prototipagem.
+>  Diagrama simplificado. Os fluxos completos (chegada dos alimentos, destinos, descarte e redistribuição) foram modelados no **Draw.io** durante a fase de prototipagem.
 
 ---
 
-## 🧭 A Jornada do Projeto
+##  A Jornada do Projeto
 
 | Fase | Etapa | O que foi feito | Status |
 |:---:|---|---|:---:|
@@ -103,13 +103,13 @@ flowchart LR
 Progresso  ████████████████░░░░  4 de 5 fases concluídas
 ```
 
-### 🔎 Como mapeamos a realidade
+###  Como mapeamos a realidade
 
 Para saber **onde** a vulnerabilidade é maior, lançamos um **questionário no Google Forms** e buscamos números concretos. Em paralelo, procuramos **cooperação com instituições locais** que movimentam alimentos, principalmente mercados e escolas.
 
 ---
 
-## 🛠️ Stack Tecnológica
+##  Stack Tecnológica
 
 <div align="center">
 
@@ -117,7 +117,7 @@ Para saber **onde** a vulnerabilidade é maior, lançamos um **questionário no 
 
 </div>
 
-### 🎨 Prototipagem
+###  Prototipagem
 
 | Ferramenta | Como foi usada |
 |---|---|
@@ -129,12 +129,12 @@ Para saber **onde** a vulnerabilidade é maior, lançamos um **questionário no 
 <div align="center"><img src="docs/prototipo-figma.png" width="80%" alt="Primeiro protótipo no Figma"/><br/><sub>O primeiro protótipo, antes das mudanças da versão final</sub></div>
 -->
 
-### 💻 Desenvolvimento
+###  Desenvolvimento
 
 O desenvolvimento se divide em três frentes: **front-end** (interface e interação), **back-end** (lógica de negócio e armazenamento de dados) e **ferramentas auxiliares** (servidor, GitHub etc.), que garantiram o ambiente de testes, o versionamento seguro e o deploy.
 
 <details>
-<summary><b>🖼️ Front-end</b> — HTML5 · CSS3 · JavaScript</summary>
+<summary><b> Front-end</b> — HTML5 · CSS3 · JavaScript</summary>
 
 <br/>
 
@@ -173,7 +173,7 @@ TCC/Site/public/JS/
 </details>
 
 <details>
-<summary><b>⚙️ Back-end</b> — PHP · MySQL</summary>
+<summary><b> Back-end</b> — PHP · MySQL</summary>
 
 <br/>
 
@@ -209,7 +209,7 @@ TCC/Site/conexao/
 </details>
 
 <details>
-<summary><b>🧰 Ferramentas auxiliares</b> — XAMPP · FileZilla · Git/GitHub · VS Code · Brackets</summary>
+<summary><b> Ferramentas auxiliares</b> — XAMPP · FileZilla · Git/GitHub · VS Code · Brackets</summary>
 
 <br/>
 
@@ -226,7 +226,7 @@ TCC/Site/conexao/
 
 ---
 
-## 🤖 Transparência no uso de IA
+##  Transparência no uso de IA
 
 Usamos inteligência artificial como **apoio**, e queremos deixar claro onde e como:
 
@@ -257,7 +257,7 @@ TCC/
 
 ---
 
-## 🚀 Rodando localmente
+## Rodando localmente
 
 > ⚠️ Passo a passo de referência. Ajuste caminhos e credenciais conforme o seu ambiente.
 
@@ -275,19 +275,19 @@ git clone https://github.com/SEU-USUARIO/SEU-REPOSITORIO.git
 
 ---
 
-## 👥 A Equipe
+## A Equipe
 
 <div align="center">
 
 <table>
 <tr>
-<td align="center" width="200"><br/><b>José Vitor<br/>dos Santos Pereira</b><br/><sub>🗄️ Banco de dados (MySQL)</sub><br/><br/></td>
-<td align="center" width="200"><br/><b>Thiago<br/>Siqueira Russo</b><br/><sub>⚙️ Back-end (PHP)</sub><br/><br/></td>
-<td align="center" width="200"><br/><b>Raphael<br/>Pierre Lima da Silva</b><br/><sub>🧱 Estrutura (HTML)</sub><br/><br/></td>
+<td align="center" width="200"><br/><b>José Vitor<br/>dos Santos Pereira</b><br/><sub> Banco de dados (MySQL)</sub><br/><br/></td>
+<td align="center" width="200"><br/><b>Thiago<br/>Siqueira Russo</b><br/><sub> Back-end (PHP)</sub><br/><br/></td>
+<td align="center" width="200"><br/><b>Raphael<br/>Pierre Lima da Silva</b><br/><sub> Estrutura (HTML)</sub><br/><br/></td>
 </tr>
 <tr>
-<td align="center" width="200"><br/><b>Gustavo<br/>Alves dos Santos</b><br/><sub>✨ Interatividade (JavaScript)</sub><br/><br/></td>
-<td align="center" width="200"><br/><b>Ryan<br/>Rodrigues Gonçalves</b><br/><sub>🎨 Estilo e acessibilidade (CSS)</sub><br/><br/></td>
+<td align="center" width="200"><br/><b>Gustavo<br/>Alves dos Santos</b><br/><sub> Interatividade (JavaScript)</sub><br/><br/></td>
+<td align="center" width="200"><br/><b>Ryan<br/>Rodrigues Gonçalves</b><br/><sub> Estilo e acessibilidade (CSS)</sub><br/><br/></td>
 <td align="center" width="200"><br/><b>Orientador</b><br/>José Victor Moreira<br/>da Silva dos Santos<br/><br/></td>
 </tr>
 </table>
@@ -298,7 +298,7 @@ git clone https://github.com/SEU-USUARIO/SEU-REPOSITORIO.git
 
 ---
 
-## 🗺️ Status e próximos passos
+## Status e próximos passos
 
 - [x] Concepção, ideação e levantamento de requisitos
 - [x] Pesquisa de campo e mapeamento
@@ -312,7 +312,7 @@ git clone https://github.com/SEU-USUARIO/SEU-REPOSITORIO.git
 
 <div align="center">
 
-### 🍎 Porque desperdício de comida não combina com fome.
+### Porque desperdício de comida não combina com fome.
 
 <sub>Feito com dedicação pelo grupo RGEats · ETEC de Rio Grande da Serra · Informática para a Internet</sub>
 
