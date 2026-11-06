@@ -1,0 +1,181 @@
+.visually-hidden-estoque {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+ 
+#conteudo:focus { outline: none; }
+ 
+/* ── Avisos ───────────────────────────────── */
+.estoque-aviso {
+  padding: 14px 18px;
+  border-radius: 12px;
+  margin-bottom: 24px;
+  font-weight: 600;
+  font-size: 15px;
+  border: 2px solid;
+}
+.estoque-aviso-ok   { background: #f0fff4; color: #1e5631; border-color: #9ae6b4; }
+.estoque-aviso-erro { background: #fff5f5; color: #9b1c1c; border-color: #feb2b2; }
+ 
+/* ── Cartões de resumo ────────────────────── */
+.estoque-resumo {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 20px;
+  margin-bottom: 40px;
+}
+.estoque-card {
+  background: #fff;
+  padding: 24px;
+  border-radius: 18px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.07);
+  border-top: 4px solid #2196C4;
+}
+.estoque-destaque {
+  grid-column: 1 / -1;
+  background: #111E4A;
+  color: #fff;
+  border-top-color: #F5C518;
+  text-align: center;
+}
+.estoque-card-rotulo { font-size: 14px; font-weight: 600; color: #555; }
+.estoque-card-valor  { font-size: 34px; font-weight: 800; color: #1B2D6B; line-height: 1.2; }
+.estoque-card-nota   { font-size: 14px; opacity: 0.85; margin-top: 6px; }
+.estoque-destaque .estoque-card-rotulo { color: #F5C518; }
+.estoque-destaque .estoque-card-valor  { color: #fff; font-size: 52px; }
+ 
+/* ── Seções ───────────────────────────────── */
+.estoque-secao {
+  background: #fff;
+  padding: 32px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+  margin-bottom: 40px;
+}
+.estoque-secao h2 { font-size: 26px; color: #1B2D6B; font-weight: 700; margin-bottom: 8px; }
+.estoque-secao h3 { font-size: 18px; color: #1B2D6B; margin-bottom: 16px; }
+.estoque-legenda-texto { color: #555; font-size: 15px; margin-bottom: 20px; }
+.estoque-vazio { color: #555; padding: 20px 0; }
+ 
+/* ── Tabela ───────────────────────────────── */
+.estoque-tabela-wrap { overflow-x: auto; border-radius: 12px; border: 1px solid #e1e8ed; }
+.estoque-tabela { width: 100%; border-collapse: collapse; font-size: 14px; min-width: 640px; }
+.estoque-tabela th,
+.estoque-tabela td { padding: 12px 14px; text-align: left; vertical-align: middle; border-bottom: 1px solid #e1e8ed; }
+.estoque-tabela thead th { background: #111E4A; color: #fff; font-weight: 600; }
+.estoque-tabela tbody th { font-weight: 600; color: #1B2D6B; }
+.estoque-tabela tbody tr:hover { background: #f4f8fb; }
+ 
+/* ── Selos de validade (texto + cor) ──────── */
+.estoque-selo {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 12px;
+  border: 2px solid;
+  white-space: nowrap;
+}
+.estoque-selo-ok      { background: #e8f5e9; color: #1b5e20; border-color: #1b5e20; }
+.estoque-selo-atencao { background: #fff3cd; color: #6b4e00; border-color: #6b4e00; }
+.estoque-selo-vencido { background: #fde8e8; color: #9b1c1c; border-color: #9b1c1c; }
+.estoque-selo-sem     { background: #eef1f5; color: #444;    border-color: #444; }
+.estoque-selo-extra   { display: block; font-size: 12px; color: #555; margin-top: 4px; }
+ 
+/* ── Ações / formulários ──────────────────── */
+.estoque-acoes { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+.estoque-form-inline { display: flex; gap: 6px; align-items: center; }
+.estoque-form-inline input[type="text"] {
+  width: 90px; padding: 8px 10px; border: 2px solid #e1e8ed; border-radius: 8px;
+  font-family: 'Poppins', sans-serif; font-size: 14px;
+}
+.estoque-btn {
+  border: none; border-radius: 8px; padding: 8px 12px; cursor: pointer;
+  font-family: 'Poppins', sans-serif; font-size: 13px; font-weight: 600;
+}
+.estoque-btn-sec    { background: #1B2D6B; color: #fff; }
+.estoque-btn-perigo { background: #9b1c1c; color: #fff; }
+ 
+.estoque-admin-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 20px;
+}
+.estoque-admin-form { background: #f4f8fb; padding: 24px; border-radius: 16px; }
+.estoque-admin-form select {
+  width: 100%; padding: 14px 18px; border: 2px solid #e1e8ed; border-radius: 12px;
+  font-family: 'Poppins', sans-serif; font-size: 15px; background: #f8fafc; color: #333;
+}
+ 
+/* ── Foco visível extra ───────────────────── */
+.estoque-tabela-wrap:focus-visible { outline: 3px solid #F5C518; outline-offset: 2px; }
+select:focus-visible { outline: 3px solid #F5C518 !important; outline-offset: 3px !important; }
+ 
+/* =============================================================
+   INTEGRAÇÃO COM O PAINEL DE ACESSIBILIDADE
+   ============================================================= */
+ 
+/* ── Modo escuro ── */
+body.acess-modo-escuro .estoque-secao,
+body.acess-modo-escuro .estoque-card:not(.estoque-destaque),
+body.acess-modo-escuro .estoque-admin-form { background: #1e1e1e !important; color: #e6e6e6 !important; box-shadow: none !important; }
+body.acess-modo-escuro .estoque-secao h2,
+body.acess-modo-escuro .estoque-secao h3,
+body.acess-modo-escuro .estoque-card-valor,
+body.acess-modo-escuro .estoque-tabela tbody th { color: #F5C518 !important; }
+body.acess-modo-escuro .estoque-legenda-texto,
+body.acess-modo-escuro .estoque-card-rotulo,
+body.acess-modo-escuro .estoque-vazio,
+body.acess-modo-escuro .estoque-selo-extra { color: #cccccc !important; }
+body.acess-modo-escuro .estoque-destaque { background: #0b132e !important; }
+body.acess-modo-escuro .estoque-destaque .estoque-card-rotulo { color: #F5C518 !important; }
+body.acess-modo-escuro .estoque-destaque .estoque-card-valor { color: #fff !important; }
+body.acess-modo-escuro .estoque-tabela td,
+body.acess-modo-escuro .estoque-tabela th { border-color: #444 !important; }
+body.acess-modo-escuro .estoque-tabela tbody tr:hover { background: #2a2a2a; }
+body.acess-modo-escuro .estoque-admin-form select,
+body.acess-modo-escuro .estoque-form-inline input[type="text"],
+body.acess-modo-escuro .form-group input[type="date"] { background: #2a2a2a !important; color: #f0f0f0 !important; border-color: #444 !important; }
+ 
+/* ── Alto contraste ── */
+body.acess-alto-contraste .estoque-secao,
+body.acess-alto-contraste .estoque-card,
+body.acess-alto-contraste .estoque-destaque,
+body.acess-alto-contraste .estoque-admin-form,
+body.acess-alto-contraste .estoque-aviso,
+body.acess-alto-contraste .estoque-tabela thead th,
+body.acess-alto-contraste .estoque-selo,
+body.acess-alto-contraste .estoque-btn,
+body.acess-alto-contraste .estoque-admin-form select,
+body.acess-alto-contraste .estoque-form-inline input[type="text"],
+body.acess-alto-contraste .form-group input[type="date"] {
+  background: #000000 !important;
+  color: #ffffff !important;
+  border: 2px solid #ffff00 !important;
+}
+body.acess-alto-contraste .estoque-card-valor,
+body.acess-alto-contraste .estoque-card-rotulo,
+body.acess-alto-contraste .estoque-card-nota,
+body.acess-alto-contraste .estoque-selo-extra,
+body.acess-alto-contraste .estoque-legenda-texto,
+body.acess-alto-contraste .estoque-vazio,
+body.acess-alto-contraste .estoque-tabela td,
+body.acess-alto-contraste .estoque-tabela tbody th { color: #ffffff !important; background: transparent !important; }
+body.acess-alto-contraste .estoque-tabela td,
+body.acess-alto-contraste .estoque-tabela th { border-color: #ffff00 !important; }
+body.acess-alto-contraste .estoque-tabela tbody tr:hover { background: #1a1a1a; }
+body.acess-alto-contraste .estoque-btn-sec { background: #ffff00 !important; color: #000000 !important; border-color: #ffffff !important; }
+ 
+/* ── Telas pequenas ── */
+@media (max-width: 480px) {
+  .estoque-secao { padding: 20px; }
+  .estoque-destaque .estoque-card-valor { font-size: 40px; }
+}
