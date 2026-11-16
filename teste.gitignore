@@ -1,0 +1,39 @@
+# Arquivos de configuração e credenciais (Senhas e Dados Sensíveis)
+.env
+.env.*
+*.env
+config.php
+conexao.php
+db.php
+database.php
+secrets.json
+credentials.json
+*.key
+*.pem
+
+# Bancos de dados e dumps SQL
+*.sql
+*.sqlite
+*.db
+
+# Arquivos de sistema e ambiente
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Diretórios de dependências e builds
+node_modules/
+vendor/
+
+# Logs e arquivos temporários
+*.log
+*.tmp
+*.temp
+*.bak
+*.swp
+
+# Pastas de IDEs / Editores de código
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
